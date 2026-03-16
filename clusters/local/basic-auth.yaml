@@ -1,0 +1,20 @@
+apiVersion: v1
+data:
+    password: ENC[AES256_GCM,data:b5qtze3t3/CaJnv6,iv:3JwwoxM1Zu27zvjWHOhdGdzILS3dZ9+vRNlR59xDPWw=,tag:KFPsaqKu6yTGx5FiFHuWiA==,type:str]
+    user: ENC[AES256_GCM,data:v4dwtPrv8WU=,iv:xe+rtOCF5b98zg5ddePlvSHq+B+BF8S6lbD3dH3EgXU=,tag:MN0xYS7HdA8a2M+0PIrn7Q==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: null
+    name: basic-auth
+    namespace: default
+sops:
+    hc_vault:
+        - vault_address: http://192.168.1.88:8200
+          engine_path: transit
+          key_name: sops
+          created_at: "2026-03-16T10:46:47Z"
+          enc: vault:v1:84fukoA84O+7H96cU4D7jV4dAZWWfM5sNWWAzEyxETGQZiPMrhp56B9g3MsEzfUE8Uhm1YAIogd3Oaaa
+    lastmodified: "2026-03-16T10:46:47Z"
+    mac: ENC[AES256_GCM,data:0XNtoessoJRmpu8hqXkf7rkidFN4UcK8qezuc9AXL4JNcuhZaPumRvoqvhSQzwEc4BPQb98Q/bWEBfUpyCAJuhGd9ZgFISIdFVHttohufflYhee2sKHu/2IKNdfONR35MTXq8npkjVqDuQ6zN63k7MyiulRAhl591urg1uUCJ4k=,iv:oIrRfFYdLj3IhA/yoikZxzeAZ5Hxx1S9akCGSrZXT08=,tag:PA4thztcDFKWQTjaz1Vcag==,type:str]
+    encrypted_regex: ^(data|stringData)$
+    version: 3.12.1
